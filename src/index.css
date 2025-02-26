@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Inter";
+    src: url(/assets/fonts/Inter-Regular.ttf) format(truetype);
+    font-weight: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Inter";
+    src: url(/assets/fonts/Inter-Bold.ttf) format(truetype);
+    font-weight: bold;
+    font-display: swap;
+  }
+  body {
+    @apply font-inter bg-gray-600 text-gray-100 overflow-hidden;
+  }
+}
+
+@layer components {
+  .completed {
+    @apply border-gray-500 !important;
+  }
+  .completed p {
+    @apply text-gray-300 line-through;
+  }
+  .invalid {
+    @apply border border-soft-red placeholder:text-soft-red !important;
+  }
+}
