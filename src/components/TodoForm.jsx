@@ -6,7 +6,10 @@ export default function TodoForm({ onAddNewTodo }) {
 
   function handleFormSubmit(e) {
     e.preventDefault();
-    if (!content) return;
+    if (!content) {
+      alert("Please complete the field.");
+      return;
+    }
     const newTodo = {
       id: crypto.randomUUID(),
       content,
