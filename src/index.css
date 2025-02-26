@@ -27,7 +27,4 @@
   .completed p {
     @apply text-gray-300 line-through;
   }
-  .invalid {
-    @apply border border-soft-red placeholder:text-soft-red !important;
-  }
 }
