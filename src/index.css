@@ -16,7 +16,7 @@
     font-display: swap;
   }
   body {
-    @apply font-inter bg-gray-600 text-gray-100 overflow-hidden;
+    @apply font-inter bg-gray-600 text-gray-100;
   }
 }
 
